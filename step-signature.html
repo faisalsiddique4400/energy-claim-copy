@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  </head>
+  <body id="reset">
+    <span class="viewport"></span>
+    <section class="first overflow-hidden varied_padding min-height-90">
+      <form id="step_signature_form" novalidate>
+        <div class="step" id="step_signature">
+          <div class="wrap larger mobile_full">
+            <div
+              class="flex-container padding-none dynamic-height sixty-forty border-radius border-blue-3d shadow-black"
+            >
+              <div class="column">
+                <fieldset class="box padding-100-top-bottom form-left">
+                  <p class="h6 margin-5 text-weight-400 text-color-green">
+                    This is the final step,
+                    <span
+                      class="fname_pull text-capitalise-first-letter"
+                    ></span>
+                  </p>
+                  <p class="h2 margin-15">Sign &amp;complete</p>
+                  <p class="margin-35">
+                    Business Energy Claims Guru works with a panel of law firms
+                    that specialize in energy mis-selling. We kindly ask you to
+                    sign
+                    <strong class="link key_documents_modal"
+                      >this document</strong
+                    >
+                    , which allows us to proceed with your claim (potentially
+                    worth £10,000s) on your behalf.
+                  </p>
+                  <div class="field">
+                    <label class="h6 margin-5">Your signature</label>
+                    <p class="margin-15 text-size-smaller">
+                      Please keep your signature in the boundaries of the white
+                      box below
+                    </p>
+                    <div id="signature-pad" class="signature-pad">
+                      <div class="signature-pad--body">
+                        <div class="signature-wrap">
+                          <canvas></canvas>
+                        </div>
+                        <span class="error primary"
+                          >Please sign in the white box above to complete</span
+                        >
+                        <input
+                          type="hidden"
+                          id="signature_image"
+                          name="signature_image"
+                        />
+                        <input
+                          type="hidden"
+                          id="signature_svg"
+                          name="signature_svg"
+                        />
+                      </div>
+                      <div class="signature-pad--footer">
+                        <div class="signature-pad--actions">
+                          <span
+                            class="button smallest background-none text-color-black clear_signature"
+                            data-action="clear"
+                            >Reset signature</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-navigation">
+                    <div class="flex-container padding-none center-vertically">
+                      <div class="column">
+                        <button
+                          type="submit"
+                          class="button background-green full submit"
+                        >
+                          Submit &amp;complete
+                        </button>
+                      </div>
+                      <input
+                        type="hidden"
+                        name="lead_timestamp"
+                        id="lead_timestamp"
+                        value=""
+                      />
+                      <input
+                        type="hidden"
+                        name="duplicate"
+                        id="duplicate"
+                        value="false"
+                      />
+                      <input type="hidden" name="product" value="44" />
+                      <input
+                        type="hidden"
+                        name="redirect_url"
+                        value="https://energyclaimsexperts.co.uk/thank-you.html"
+                      />
+                    </div>
+                    <div class="loading-step">
+                      <div class="loading-spinner"></div>
+                      <div class="overlay"></div>
+                    </div>
+                  </div>
+                  <div class="loading-step">
+                    <div class="loading-spinner"></div>
+                    <div class="overlay"></div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="column">
+                <div
+                  class="box background-grey padding-100-top-bottom form-right select-none"
+                >
+                  <div class="section">
+                    <p class="h6 text-weight-400">
+                      Key considerations regarding your business energy claim
+                    </p>
+                  </div>
+                  <div class="section">
+                    <div
+                      class="basic-list check-bullets text-size-smaller margin-none"
+                    >
+                      <ul>
+                        <li>
+                          The potential value of your claim could amount
+                          <strong class="border-bottom-yellow">£10,000s</strong>
+                        </li>
+                        <li>
+                          Energy brokers have been compelled by OFGEM to
+                          reimburse their
+                          <strong class="border-bottom-yellow"
+                            >hidden commissions</strong
+                          >
+                        </li>
+                        <li>
+                          You might be eligible for compensation if you have
+                          been a victim of a
+                          <strong class="border-bottom-yellow">mis-sold</strong>
+                          business energy deal and due compensation
+                        </li>
+                        <li>
+                          British business owners may potentially face a
+                          <strong class="border-bottom-yellow">fourfold</strong>
+                          increase in their business energy expenses compared to
+                          what they paid in 2020.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.8/dist/signature_pad.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.viewport@1.0.1/jquery.viewport.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7fed8b05cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/form-signature.js"></script>
+    <script src="js/form-signaturepad-settings.js"></script>
+    <script src="js/site-functions.js"></script>
+    <script src="js/site-modals.js"></script>
+  </body>
+</html>

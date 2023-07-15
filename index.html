@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <link rel="stylesheet" href="css/site.css" />
+
+    <link rel="icon" type="image/png" href="img/svg/favicon.svg" />
+    <link rel="shortcut icon" href="img/svg/favicon.svg" />
+    <link rel="apple-touch-icon" href="img/svg/favicon.svg" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://webservices.data-8.co.uk/javascript/loader.ashx?key=BKAS-XMQQ-JFZT-YBY8&load=PhoneValidation,EmailValidation"></script>
+  </head>
+
+  <body id="reset">
+    <section class="first overflow-hidden varied_padding">
+      <form id="step_1_form" novalidate>
+        <div class="step" id="step_1">
+          <div class="wrap mobile_full">
+            <div class="flex-container seventy-thirty center-vertically">
+              <fieldset class="box border-blue-3d shadow-black">
+                <label class="h5 margin-15"
+                  >Who supplies your business energy?</label
+                >
+                <p class="text-size-smaller">
+                  Suggestions will appear as you type
+                </p>
+                <div class="field">
+                  <div class="field-icon aligned-button energy">
+                    <input
+                      type="text"
+                      name="energy_supplier"
+                      class="energy_supplier_list text-capitalise-first-letter"
+                      placeholder="Business energy supplier"
+                    />
+                    <span class="button background-green smaller next">
+                      Check your claim
+                    </span>
+                  </div>
+                  <span class="error primary"
+                    >Please provide who supplies your business energy</span
+                  >
+                </div>
+                <span></span>
+                  Great news! OFGEM now mandates energy brokers to reimburse any
+                  concealed commissions they charged you. If you're a UK-based
+                  business,<b> you can easily verify your eligibility for a refund
+                  in just 60 seconds.</b>
+               </span
+                >
+                <div class="loading-step">
+                  <div class="loading-spinner"></div>
+                  <div class="overlay"></div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="wrap">
+            <p
+              class="margin-none indented-text-right text-size-smallest mobile_show"
+            >
+              OFGEM have finally made energy brokers pay back their hidden
+              commissions charged to you. If you're a business in the UK,
+              <strong
+                >find out if you're owed a refund in just 60 seconds</strong
+              >
+            </p>
+          </div>
+        </div>
+        <div class="step" id="step_2">
+          <div class="wrap larger mobile_full">
+            <div
+              class="flex-container padding-none dynamic-height sixty-forty border-radius border-blue-3d shadow-black"
+            >
+              <div class="column">
+                <fieldset class="box padding-100-top-bottom form-left">
+                  <div class="progress">
+                    <div class="progress-bar">
+                      <div style="width: 0%"></div>
+                    </div>
+                  </div>
+                  <p class="h2 margin-25">About your business energy</p>
+                  <div class="field">
+                    <p class="margin-35 mobile_hide">
+                     To continue with the claim verification process, we need specific information about your business. Please provide the name of your business below and click on 
+                      <strong class="border-bottom-double-yellow"
+                        >'Find my business'</strong
+                      >
+                    </p>
+                       
+                    <label class="h6 margin-5">Type of utility</label>
+                    <p class="margin-15 text-size-smaller">
+                      Make a selection below
+                    </p>
+                    <ul class="options two">
+                      <li>
+                        <input
+                          type="radio"
+                          class="custom-checkbox"
+                          name="energy_utility_type"
+                          id="energy_utility_type_1"
+                          value="Gas"
+                        />
+                        <label for="energy_utility_type_1"> Gas </label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          class="custom-checkbox"
+                          name="energy_utility_type"
+                          id="energy_utility_type_2"
+                          value="Water"
+                        />
+                        <label for="energy_utility_type_2"> Water </label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          class="custom-checkbox"
+                          name="energy_utility_type"
+                          id="energy_utility_type_3"
+                          value="Electric"
+                        />
+                        <label for="energy_utility_type_3"> Electric </label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          class="custom-checkbox"
+                          name="energy_utility_type"
+                          id="energy_utility_type_4"
+                          value="Gas &amp; Electric"
+                        />
+                        <label for="energy_utility_type_4">
+                          Gas &amp; Electric
+                        </label>
+                      </li>
+                    </ul>
+                    <span class="error primary"
+                      >Please select the type of utility</span
+                    >
+                  </div>
+                  <div class="field">
+                    <label class="h6 margin-5"
+                      >Did the broker specify if commission would be added to
+                      each unit of energy you paid for?</label
+                    >
+                    <p class="margin-15 text-size-smaller">
+                      Make a selection below
+                    </p>
+                    <ul class="options two">
+                      <li>
+                        <input
+                          type="radio"
+                          class="custom-checkbox"
+                          name="energy_broker_commission"
+                          id="energy_broker_commission_1"
+                          value="Yes"
+                        />
+                        <label for="energy_broker_commission_1"> Yes </label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          class="custom-checkbox"
+                          name="energy_broker_commission"
+                          id="energy_broker_commission_2"
+                          value="No"
+                        />
+                        <label for="energy_broker_commission_2"> No </label>
+                      </li>
+                    </ul>
+                    <span class="error primary"
+                      >Please select whether the broker made you aware that
+                      commission would be added</span
+                    >
+                  </div>
+                  <div class="form-navigation">
+                    <div
+                      class="flex-container two-col padding-none center-vertically"
+                    >
+                      <div class="column">
+                        <span class="button background-none full back">
+                          <i class="fa-solid fa-chevron-left"></i> Go back
+                        </span>
+                      </div>
+                      <div class="column">
+                        <span class="button background-green full next">
+                          Next
+                        </span>
+                      </div>
+                    </div>
+                    <div class="loading-step">
+                      <div class="loading-spinner"></div>
+                      <div class="overlay"></div>
+                    </div>
+                  </div>
+                  <div class="loading-step">
+                    <div class="loading-spinner"></div>
+                    <div class="overlay"></div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="column">
+                <div
+                  class="box background-grey padding-100-top-bottom form-right select-none"
+                >
+                  <div class="section">
+                    <p class="h6 text-weight-400">
+                      Essential Factors to Keep in Mind for Your Business Energy
+                      Claim
+                    </p>
+                  </div>
+                  <div class="section">
+                    <div
+                      class="basic-list check-bullets text-size-smaller margin-none"
+                    >
+                      <ul>
+                        <li>
+                          The potential value of your claim could be
+                          <strong class="border-bottom-yellow"
+                            >£10,000s
+                          </strong>
+                        </li>
+                        <li>
+                          OFGEM has mandated energy brokers to reimburse their
+                          <strong class="border-bottom-yellow"
+                            >hidden commissions</strong
+                          >
+                        </li>
+                        <li>
+                          If you have fallen victim to a
+                          <strong class="border-bottom-yellow">mis-sold</strong>
+                          business energy deal, you may be eligible for
+                          compensation to cover the due losses.
+                        </li>
+                        <li>
+                          British business owners could potentially experience a
+                          <strong class="border-bottom-yellow">fourfold</strong>
+                          rise in their business energy costs compared to what
+                          they paid in 2020.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step" id="step_3">
+          <div class="wrap larger mobile_full">
+            <div
+              class="flex-container padding-none dynamic-height sixty-forty border-radius border-blue-3d shadow-black"
+            >
+              <div class="column">
+                <fieldset class="box padding-100-top-bottom form-left">
+                  <div class="progress">
+                    <div class="progress-bar">
+                      <div style="width: 25%"></div>
+                    </div>
+                  </div>
+                  <p class="h2 margin-15">About your business</p>
+                  <p class="margin-35 mobile_hide">
+                    To proceed with the claim verification process, we require
+                    some specific information about your business. Kindly
+                    provide the name of your business below and click on
+                    <strong class="border-bottom-double-yellow"
+                      >'Find my business'</strong
+                    >
+                  </p>
+                  <div class="field">
+                    <label class="h6 margin-5"
+                      >Enter the name of your business</label
+                    >
+                    <p class="text-size-smaller">
+                      Kindly input the complete name of your business and
+                      <strong class="border-bottom-double-yellow"
+                        >NOT your energy supplier</strong
+                      >
+                    </p>
+                    <div class="field">
+                      <div class="field-icon aligned-button company">
+                        <input
+                          type="text"
+                          name="company_name_input"
+                          class="text-capitalise-first-letter"
+                          placeholder="Name of your business"
+                        />
+                        <span
+                          class="button background-green smaller"
+                          id="company_search"
+                        >
+                          Find my business
+                        </span>
+                      </div>
+                      <span class="error primary"
+                        >Please enter the name of your business and click 'Find
+                        my business'</span
+                      >
+                    </div>
+                  </div>
+                  <div class="form-navigation">
+                    <div
+                      class="flex-container two-col padding-none center-vertically"
+                    >
+                      <div class="column">
+                        <span class="button background-none full back">
+                          <i class="fa-solid fa-chevron-left"></i> Go back
+                        </span>
+                      </div>
+                      <div class="column"></div>
+                    </div>
+                    <div class="loading-step">
+                      <div class="loading-spinner"></div>
+                      <div class="overlay"></div>
+                    </div>
+                  </div>
+                  <div class="loading-step">
+                    <div class="loading-spinner"></div>
+                    <div class="overlay"></div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="column">
+                <div
+                  class="box background-grey padding-100-top-bottom form-right select-none"
+                >
+                  <div class="section">
+                    <p class="h6 text-weight-400">
+                      Essential Factors to Keep in Mind for Your Business Energy
+                      Claim considerations regarding your business energy claim
+                    </p>
+                  </div>
+                  <div class="section">
+                    <div
+                      class="basic-list check-bullets text-size-smaller margin-none"
+                    >
+                      <ul>
+                        <li>
+                          The potential value of your claim could be
+                          <strong class="border-bottom-yellow">£10,000s</strong>
+                        </li>
+                        <li>
+                          OFGEM has mandated energy brokers to reimburse their
+                          <strong class="border-bottom-yellow"
+                            >hidden commissions</strong
+                          >
+                        </li>
+                        <li>
+                          If you have fallen victim to a
+                          <strong class="border-bottom-yellow">mis-sold</strong>
+                          business energy deal, you may be eligible for
+                          compensation to cover the due losses.
+                        </li>
+                        <li>
+                          British business owners could potentially experience a
+                          <strong class="border-bottom-yellow">fourfold</strong>
+                          rise in their business energy costs compared to what
+                          they paid in 2020.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step" id="step_4">
+          <div class="wrap larger mobile_full">
+            <div
+              class="flex-container padding-none dynamic-height sixty-forty border-radius border-blue-3d shadow-black"
+            >
+              <div class="column">
+                <fieldset class="box padding-100-top-bottom form-left">
+                  <div class="progress">
+                    <div class="progress-bar">
+                      <div style="width: 50%"></div>
+                    </div>
+                  </div>
+                  <p class="h2 margin-25">Information about you</p>
+                  <div class="field two retain">
+                    <div class="field">
+                      <label class="h6 margin-5">Title</label>
+                      <select name="title">
+                        <option disabled selected value>&mdash;</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Dr">Dr</option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <span class="error primary"
+                        >Please select your title</span
+                      >
+                    </div>
+                  </div>
+                  <div class="field two">
+                    <div class="field">
+                      <label class="h6 margin-5">First name</label>
+                      <div class="field-icon">
+                        <input
+                          type="text"
+                          name="fname"
+                          class="text-capitalise-first-letter"
+                          placeholder="First name"
+                        />
+                      </div>
+                      <span class="error primary"
+                        >Please enter your first name</span
+                      >
+                    </div>
+                    <div class="field">
+                      <label class="h6 margin-5">Last name</label>
+                      <div class="field-icon">
+                        <input
+                          type="text"
+                          name="lname"
+                          class="text-capitalise-first-letter"
+                          placeholder="Last name"
+                        />
+                      </div>
+                      <span class="error primary"
+                        >Please enter your last name</span
+                      >
+                    </div>
+                    <input type="hidden" name="fname_clean" value="" />
+                    <input type="hidden" name="lname_clean" value="" />
+                  </div>
+                  <div class="field">
+                    <label class="h6 margin-5">Date of birth</label>
+                    <p class="margin-15 text-size-smaller">
+                      Enter in the format DD/MM/YYYY
+                    </p>
+                    <div class="field-icon date">
+                      <input
+                        type="text"
+                        name="date_of_birth"
+                        class="date_input"
+                        inputmode="numeric"
+                        placeholder="DD/MM/YYYY"
+                      />
+                    </div>
+                    <span class="error primary"
+                      >Please enter a valid date (DD/MM/YYYY)</span
+                    >
+                    <span class="error secondary"
+                      >Your date of birth cannot be in the future</span
+                    >
+                    <span class="error tertiary"
+                      >You must be at least 18 years old to claim</span
+                    >
+                  </div>
+                  <div class="field">
+                    <label class="h6 margin-5"
+                      >Your job title at <span class="company_name_pull"></span
+                    ></label>
+                    <p class="margin-15 text-size-smaller">
+                      Suggestions will appear as you type
+                    </p>
+                    <div class="field-icon">
+                      <input
+                        type="text"
+                        name="company_job_title"
+                        class="job_title_list text-capitalise-first-letter"
+                        placeholder="Job title"
+                      />
+                    </div>
+                    <span class="error primary"
+                      >Please enter your job title at
+                      <span class="company_name_pull"></span
+                    ></span>
+                  </div>
+                  <div class="form-navigation">
+                    <div
+                      class="flex-container two-col padding-none center-vertically"
+                    >
+                      <div class="column">
+                        <span class="button background-none full back">
+                          <i class="fa-solid fa-chevron-left"></i> Go back
+                        </span>
+                      </div>
+                      <div class="column">
+                        <span class="button background-green full next">
+                          Next
+                        </span>
+                      </div>
+                    </div>
+                    <div class="loading-step">
+                      <div class="loading-spinner"></div>
+                      <div class="overlay"></div>
+                    </div>
+                  </div>
+                  <div class="loading-step">
+                    <div class="loading-spinner"></div>
+                    <div class="overlay"></div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="column">
+                <div
+                  class="box background-grey padding-100-top-bottom form-right select-none"
+                >
+                  <div class="section">
+                    <p class="h6 text-weight-400">
+                      Essential Factors to Keep in Mind for Your Business Energy
+                      Claim considerations regarding your business energy claim
+                    </p>
+                  </div>
+                  <div class="section">
+                    <div
+                      class="basic-list check-bullets text-size-smaller margin-none"
+                    >
+                      <ul>
+                        <li>
+                          The potential value of your claim could be
+                          <strong class="border-bottom-yellow">£10,000s</strong>
+                        </li>
+                        <li>
+                          OFGEM has mandated energy brokers to reimburse their
+                          <strong class="border-bottom-yellow"
+                            >hidden commissions</strong
+                          >
+                        </li>
+                        <li>
+                          If you have fallen victim to a
+                          <strong class="border-bottom-yellow">mis-sold</strong>
+                          business energy deal, you may be eligible for
+                          compensation to cover the due losses.
+                        </li>
+                        <li>
+                          British business owners could potentially experience a
+                          <strong class="border-bottom-yellow">fourfold</strong>
+                          rise in their business energy costs compared to what
+                          they paid in 2020.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step" id="step_5">
+          <div class="wrap larger mobile_full">
+            <div
+              class="flex-container padding-none dynamic-height sixty-forty border-radius border-blue-3d shadow-black"
+            >
+              <div class="column">
+                <fieldset class="box padding-100-top-bottom form-left">
+                  <p class="h6 margin-5 text-weight-400 text-color-green">
+                    Thank you,
+                    <span class="fname_pull text-capitalise-first-letter"></span
+                    >. We trust you're enjoying a delightful
+                    <span class="time_of_day"></span>
+                  </p>
+                  <p class="h2 margin-15">Your contact information</p>
+                  <p class="margin-35 mobile_hide">
+                    To keep you informed about the progress of your claim, we kindly request your email address and telephone number.
+                  </p>
+                  <div class="field">
+                    <label class="h6 margin-5">Email address</label>
+                    <p class="margin-15 text-size-smaller">
+                      So we can keep you up to date about your claim via email
+                    </p>
+                    <div class="field-icon email">
+                      <input
+                        type="email"
+                        name="email_address"
+                        placeholder="Email address"
+                      />
+                    </div>
+                    <span class="error primary"
+                      >Please enter your email address</span
+                    >
+                    <span class="error secondary"
+                      >This email address does not appear to be valid</span
+                    >
+                    <span class="email_validation_error">
+                      This email address doesn't look valid.<span
+                        class="suggested_fix_conditional"
+                      >
+                        <span class="suggested_fix"></span>.</span
+                      >
+                      Would you like to fix?
+                      <span class="suggested_fix_apply"
+                        >Yes, fix my email address</span
+                      >
+                    </span>
+                    <input
+                      type="hidden"
+                      name="validate_email_address"
+                      value=""
+                    />
+                  </div>
+                  <div class="field">
+                    <label class="h6 margin-5">Mobile telephone number</label>
+                    <p class="margin-15 text-size-smaller">
+                      So we can keep you up to date about your claim via SMS
+                    </p>
+                    <div class="field-icon telephone">
+                      <input
+                        type="tel"
+                        name="telephone_number"
+                        class="numbers_only"
+                        placeholder="Mobile telephone number"
+                      />
+                    </div>
+                    <span class="error primary"
+                      >Please enter a valid mobile telephone number</span
+                    >
+                    <span class="error secondary"
+                      >This telephone number does not appear to be valid</span
+                    >
+                    <input
+                      type="hidden"
+                      name="validate_telephone_number"
+                      value=""
+                    />
+                  </div>
+                  <div class="form-navigation">
+                    <div
+                      class="flex-container two-col padding-none center-vertically"
+                    >
+                      <div class="column">
+                        <span class="button background-none full back">
+                          <i class="fa-solid fa-chevron-left"></i> Go back
+                        </span>
+                      </div>
+                      <div class="column">
+                        <button
+                          type="submit"
+                          class="button background-green full submit"
+                        >
+                          Next
+                        </button>
+                      </div>
+                      <input
+                        type="hidden"
+                        name="page_brand"
+                        value="energyclaimsexperts.co.uk"
+                      />
+                      <input
+                        type="hidden"
+                        name="campaign_source"
+                        id="campaign_source"
+                        value="unknown"
+                      />
+                      <input
+                        type="hidden"
+                        name="utm_source"
+                        id="utm_source"
+                        value=""
+                      />
+                      <input
+                        type="hidden"
+                        name="utm_medium"
+                        id="utm_medium"
+                        value=""
+                      />
+                      <input
+                        type="hidden"
+                        name="utm_campaign"
+                        id="utm_campaign"
+                        value=""
+                      />
+                      <input
+                        type="hidden"
+                        name="utm_content"
+                        id="utm_content"
+                        value=""
+                      />
+                      <input type="hidden" name="product" value="44" />
+                      <input
+                        type="hidden"
+                        name="redirect_url"
+                        value="https://energyclaimsexperts.co.uk/step-signature.html"
+                      />
+                      <input
+                        type="hidden"
+                        name="redirect_with_data"
+                        id="redirect_with_data"
+                        value="1"
+                      />
+                      <input type="hidden" name="company_name" value="" />
+                      <input type="hidden" name="company_number" value="" />
+                      <input type="hidden" name="company_type" value="" />
+                      <input type="hidden" name="company_premises" value="" />
+                      <input type="hidden" name="company_line_1" value="" />
+                      <input type="hidden" name="company_region" value="" />
+                      <input type="hidden" name="company_locality" value="" />
+                      <input type="hidden" name="company_postcode" value="" />
+                      <input type="hidden" id="validate_step_5" value="" />
+                    </div>
+                    <div class="opt-in">
+                      <p class="text-size-smallest-promise margin-none">
+                        <i class="fa-solid fa-lock-keyhole"></i> Your personal
+                        information will be treated carefully in accordance with
+                        our
+                        <a
+                         
+                          class="link privacy_policy_modal"
+                          onclick="onClickPrivacyPolicy()"
+                          >privacy policy</a
+                        >
+                      </p>
+                    </div>
+                    <div class="loading-step">
+                      <div class="loading-spinner"></div>
+                      <div class="overlay"></div>
+                    </div>
+                  </div>
+                  <div class="loading-step">
+                    <div class="loading-spinner"></div>
+                    <div class="overlay"></div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="column">
+                <div
+                  class="box background-grey padding-100-top-bottom form-right select-none"
+                >
+                  <div class="section">
+                    <p class="h6 text-weight-400">
+                      Essential Factors to Keep in Mind for Your Business Energy
+                      Claim considerations regarding your business energy claim
+                    </p>
+                  </div>
+                  <div class="section">
+                    <div
+                      class="basic-list check-bullets text-size-smaller margin-none"
+                    >
+                      <ul>
+                        <li>
+                          The potential value of your claim could be
+                          <strong class="border-bottom-yellow">£10,000s</strong>
+                        </li>
+                        <li>
+                          OFGEM has mandated energy brokers to reimburse their
+                          <strong class="border-bottom-yellow"
+                            >hidden commissions</strong
+                          >
+                        </li>
+                        <li>
+                          If you have fallen victim to a
+                          <strong class="border-bottom-yellow">mis-sold</strong>
+                          business energy deal, you may be eligible for
+                          compensation to cover the due losses.
+                        </li>
+                        <li>
+                          British business owners could potentially experience a
+                          <strong class="border-bottom-yellow">fourfold</strong>
+                          rise in their business energy costs compared to what
+                          they paid in 2020.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <div class="modal" id="company_confirmation_modal">
+      <div class="flex-container wrap smaller">
+        <div class="column">
+          <div class="field-outside margin-25" id="company_select_container">
+            <p
+              class="box inline padding-25 background-white border-blue-3d margin-15 text-color-blue"
+            >
+              <strong
+                ><i class="fa-solid fa-magnifying-glass"></i> You searched: </strong
+              ><span
+                class="background-yellow text-capitalise-first-letter company_name_pull"
+              ></span>
+            </p>
+            <p class="h4 margin-15">Select your business</p>
+            <p>
+              We have gathered results from Companies House and we now need you
+              to confirm which business is yours
+            </p>
+            <select
+              class="select animation-yellow-flash-infinite"
+              id="company_select"
+            >
+              <option disabled selected value="0">Select your business</option>
+            </select>
+            <div class="form-navigation">
+              <div
+                class="flex-container two-col padding-none center-vertically"
+              >
+                <div class="column">
+                  <strong class="link border-none company_none_apply">
+                    <i class="fa-solid fa-xmark text-color-red"></i> None of
+                    these are my company
+                  </strong>
+                </div>
+                <div class="column"></div>
+              </div>
+            </div>
+          </div>
+          <div class="field-outside margin-none hide" id="company_confirmation">
+            <p class="h4 margin-15">Verification of your business details</p>
+            <p>
+              To ensure accuracy, please verify that the information provided
+              about your business below is correct.
+            </p>
+            <div class="summary margin-25">
+              <div class="box background-grey border-blue-3d">
+                <div class="flex-container two-col padding-none">
+                  <div class="column">
+                    <strong class="text-color-blue">Company name:</strong>
+                  </div>
+                  <div class="column margin-15">
+                    <span
+                      class="company_name_pull text-capitalise-first-letter margin-5"
+                    ></span>
+                  </div>
+                </div>
+                <div class="flex-container two-col padding-none">
+                  <div class="column">
+                    <strong class="text-color-blue">Company address:</strong>
+                  </div>
+                  <div class="column margin-15">
+                    <span class="address-field company_premises_pull"></span>
+                    <span class="address-field company_line_1_pull"></span>
+                    <span class="address-field company_region_pull"></span>
+                    <span class="address-field company_locality_pull"></span>
+                    <span class="address-field company_postcode_pull"></span>
+                  </div>
+                </div>
+                <div class="flex-container two-col padding-none">
+                  <div class="column">
+                    <strong class="text-color-blue"
+                      >Company registration number:</strong
+                    >
+                  </div>
+                  <div class="column">
+                    <span class="margin-none company_number_pull"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-navigation">
+              <div
+                class="flex-container two-col padding-none center-vertically"
+              >
+                <div class="column">
+                  <strong class="link border-none" id="company_incorrect_info">
+                    <i class="fa-solid fa-xmark text-color-red"></i> No, this is
+                    not my company
+                  </strong>
+                </div>
+                <div class="column">
+                  <span
+                    class="button background-green full company_confirm_correct"
+                  >
+                    Yes, this is correct
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field-outside margin-none hide" id="company_reject_name">
+            <p class="h4 margin-15">Are you sure this is correct?</p>
+            <p class="h6">
+              You have selected a business that contains, or partly contains the
+              name of a well known company for business energy
+            </p>
+            <p
+              class="box inline padding-25 background-white border-blue-3d margin-25 text-color-blue"
+            >
+              <strong>You selected: </strong
+              ><span
+                class="background-yellow text-capitalise-first-letter company_name_pull"
+              ></span>
+            </p>
+            <p>
+              <strong class="border-bottom-double-yellow"
+                >We are asking you for the name of your own business</strong
+              >, not who supplies your business's energy. You have already
+              provided that
+            </p>
+            <p>
+              If your own business name does contain, or partly contains the
+              name of a business energy provider, then please click
+              <strong class="border-bottom-double-yellow"
+                >'Yes, this is correct'</strong
+              >
+              below
+            </p>
+            <p class="margin-15">
+              If you need to start again and enter the name of your own
+              business, click
+              <strong class="border-bottom-double-yellow"
+                >'No, search again'</strong
+              >
+            </p>
+            <div class="form-navigation">
+              <div
+                class="flex-container two-col padding-none center-vertically"
+              >
+                <div class="column">
+                  <strong class="link border-none company_confirm_correct">
+                    <i class="fa-solid fa-circle-check text-color-green"></i>
+                    Yes, this is correct
+                  </strong>
+                </div>
+                <div class="column">
+                  <span class="button background-green full company_none_apply">
+                    No, search again
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loading-page">
+      <div class="contents">
+        <div class="logo">
+          <img src="img/svg/logo.svg" alt="" />
+        </div>
+        <p class="h3 text-align-center">Finding your company</p>
+        <div class="loading-spinner inline"></div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.13.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.viewport@1.0.1/jquery.viewport.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/form-questions.js"></script>
+    <script src="js/site-functions.js"></script>
+    <script src="js/site-modals.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script>
+
+function onClickPrivacyPolicy(){
+  window.open('https://www.businessenergyclaimguru.co.uk/privacy-policy')
+}
+
+    </script>
+  </body>
+</html>
